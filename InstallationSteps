@@ -1,0 +1,18 @@
+sudo snap install code --classic
+code .
+python3 -m venv .venv
+apt install python3.12-venv
+apt-get update
+sudo python3 -m venv .venv
+source .venv/bin/activate
+pip install -U autogenstudio
+autogenstudio ui
+
+
+
+sudo python3 -m venv .venv
+source .venv/bin/activate
+pip install -U "autogen-agentchat"
+pip install "autogen-ext[azure]"
+pip install "python-dotenv"
+pip install "azure-identity"
